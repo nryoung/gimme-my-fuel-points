@@ -10,15 +10,25 @@ class App extends Component {
     super(props);
     this.state = {
       date: now,
+      focused: false,
     };
   }
   handleDateChange = date => {
     this.setState({ date });
   };
+
+  handleFocusChange = ({ focused }) => {
+    this.setState({ focused });
+  };
   render() {
     return (
       <div className="App">
-        <Date date={this.state.date} onDateChange={this.handleDateChange} />
+        <Date
+          date={this.state.date}
+          onDateChange={this.handleDateChange}
+          focused={this.state.focused}
+          onFocusChange={this.handleFocusChange}
+        />
       </div>
     );
   }
