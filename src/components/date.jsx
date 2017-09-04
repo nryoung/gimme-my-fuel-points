@@ -2,9 +2,9 @@ import React from 'react';
 import { SingleDatePicker } from 'react-dates'
 import 'react-dates/lib/css/_datepicker.css';
 
-const Date = () => (
+const Date = ({ date }) => (
   <SingleDatePicker
-    date={null}
+    date={date}
     onDateChange={date => {}}
     focused={true}
     onFocusChange={() => {}}
