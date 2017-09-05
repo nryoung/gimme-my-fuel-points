@@ -8,6 +8,7 @@ const Date = ({ date, onDateChange, focused, onFocusChange }) => (
     date={date}
     onDateChange={onDateChange}
     focused={focused}
+    hideKeyboardShortcutsPanel={true}
     onFocusChange={onFocusChange}
     numberOfMonths={1}
     showDefaultInputIcon={true}
