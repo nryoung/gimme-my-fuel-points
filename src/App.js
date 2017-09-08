@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import './App.css';
-import Date from './components/Date';
+import Date from './components/date';
+import Time from './components/Time';
 
 const now = moment();
 
@@ -10,15 +11,15 @@ class App extends Component {
     super(props);
     this.state = {
       date: now,
-      focused: false,
+      time: now,
     };
   }
   handleDateChange = date => {
     this.setState({ date });
   };
 
-  handleFocusChange = ({ focused }) => {
-    this.setState({ focused });
+  handleTimeChange = time => {
+    this.setState({ time });
   };
   render() {
     return (
@@ -26,9 +27,9 @@ class App extends Component {
         <Date
           date={this.state.date}
           onDateChange={this.handleDateChange}
-          focused={this.state.focused}
           onFocusChange={this.handleFocusChange}
         />
+        <Time defaultValue={this.state.time} onChange={this.handleTimeChange} />
       </div>
     );
   }
