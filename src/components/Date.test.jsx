@@ -5,12 +5,7 @@ import Date from './date';
 
 it('renders date correctly', () => {
   const tree = shallow(
-    <Date
-      date={moment('2017-09-06')}
-      onDateChange={() => {}}
-      focused={true}
-      onFocusChange={() => {}}
-    />
+    <Date date={moment('2017-09-06T00:00:00.000Z')} onDateChange={() => {}} />
   );
   expect(tree).toMatchSnapshot();
 });

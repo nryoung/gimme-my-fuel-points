@@ -12,13 +12,13 @@ ShallowWrapper {
     anchorDirection="left"
     customCloseIcon={null}
     customInputIcon={null}
-    date={"2017-09-06T06:00:00.000Z"}
+    date={"2017-09-06T00:00:00.000Z"}
     daySize={39}
     disabled={false}
     displayFormat={[Function]}
     enableOutsideDays={false}
     firstDayOfWeek={null}
-    focused={true}
+    focused={false}
     hideKeyboardShortcutsPanel={true}
     horizontalMargin={0}
     id="date"
@@ -86,13 +86,13 @@ ShallowWrapper {
       anchorDirection="left"
       customCloseIcon={null}
       customInputIcon={null}
-      date={"2017-09-06T06:00:00.000Z"}
+      date={"2017-09-06T00:00:00.000Z"}
       daySize={39}
       disabled={false}
       displayFormat={[Function]}
       enableOutsideDays={false}
       firstDayOfWeek={null}
-      focused={true}
+      focused={false}
       hideKeyboardShortcutsPanel={true}
       horizontalMargin={0}
       id="date"
@@ -160,28 +160,27 @@ ShallowWrapper {
   "renderer": ReactShallowRenderer {
     "_instance": ShallowComponentWrapper {
       "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
+      "_compositeType": 0,
       "_context": Object {},
       "_currentElement": <Date
-        date={"2017-09-06T06:00:00.000Z"}
-        focused={true}
+        date={"2017-09-06T00:00:00.000Z"}
         onDateChange={[Function]}
-        onFocusChange={[Function]}
 />,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
-      "_instance": StatelessComponent {
+      "_instance": Date {
         "_reactInternalInstance": [Circular],
         "context": Object {},
+        "handleFocusChange": [Function],
         "props": Object {
-          "date": "2017-09-06T06:00:00.000Z",
-          "focused": true,
+          "date": "2017-09-06T00:00:00.000Z",
           "onDateChange": [Function],
-          "onFocusChange": [Function],
         },
         "refs": Object {},
-        "state": null,
+        "state": Object {
+          "focused": false,
+        },
         "updater": Object {
           "enqueueCallback": [Function],
           "enqueueCallbackInternal": [Function],
@@ -204,13 +203,13 @@ ShallowWrapper {
           anchorDirection="left"
           customCloseIcon={null}
           customInputIcon={null}
-          date={"2017-09-06T06:00:00.000Z"}
+          date={"2017-09-06T00:00:00.000Z"}
           daySize={39}
           disabled={false}
           displayFormat={[Function]}
           enableOutsideDays={false}
           firstDayOfWeek={null}
-          focused={true}
+          focused={false}
           hideKeyboardShortcutsPanel={true}
           horizontalMargin={0}
           id="date"
@@ -278,13 +277,13 @@ ShallowWrapper {
           anchorDirection="left"
           customCloseIcon={null}
           customInputIcon={null}
-          date={"2017-09-06T06:00:00.000Z"}
+          date={"2017-09-06T00:00:00.000Z"}
           daySize={39}
           disabled={false}
           displayFormat={[Function]}
           enableOutsideDays={false}
           firstDayOfWeek={null}
-          focused={true}
+          focused={false}
           hideKeyboardShortcutsPanel={true}
           horizontalMargin={0}
           id="date"
@@ -359,10 +358,8 @@ ShallowWrapper {
   },
   "root": [Circular],
   "unrendered": <Date
-    date={"2017-09-06T06:00:00.000Z"}
-    focused={true}
+    date={"2017-09-06T00:00:00.000Z"}
     onDateChange={[Function]}
-    onFocusChange={[Function]}
 />,
 }
 `;
