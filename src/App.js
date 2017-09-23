@@ -3,23 +3,31 @@ import moment from 'moment';
 import './App.css';
 import Date from './components/date';
 import Time from './components/Time';
+import EntryID from './components/EntryID';
 
 const now = moment();
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      date: now,
-      time: now,
-    };
-  }
+  state = {
+    date: now,
+    time: now,
+    entryid1: '',
+    entryid2: '',
+    entryid3: '',
+    entryid4: '',
+    entryid5: '',
+    entryid6: '',
+  };
   handleDateChange = date => {
     this.setState({ date });
   };
 
   handleTimeChange = time => {
     this.setState({ time });
+  };
+
+  handleEntryIDChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
   };
   render() {
     return (
@@ -30,6 +38,7 @@ class App extends Component {
           onFocusChange={this.handleFocusChange}
         />
         <Time defaultValue={this.state.time} onChange={this.handleTimeChange} />
+        <EntryID onChange={this.handleEntryIDChange} />
       </div>
     );
   }
