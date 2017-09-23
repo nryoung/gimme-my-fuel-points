@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import './App.css';
-import Date from './components/date';
+import Date from './components/Date';
 import Time from './components/Time';
 import EntryID from './components/EntryID';
 
