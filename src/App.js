@@ -32,13 +32,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Date
-          date={this.state.date}
-          onDateChange={this.handleDateChange}
-          onFocusChange={this.handleFocusChange}
-        />
-        <Time defaultValue={this.state.time} onChange={this.handleTimeChange} />
-        <EntryID onChange={this.handleEntryIDChange} />
+        <form onSubmit={this.handleSubmit}>
+          <Date
+            date={this.state.date}
+            onDateChange={this.handleDateChange}
+            onFocusChange={this.handleFocusChange}
+          />
+          <Time
+            defaultValue={this.state.time}
+            onChange={this.handleTimeChange}
+          />
+          <EntryID onChange={this.handleEntryIDChange} />
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     );
   }
